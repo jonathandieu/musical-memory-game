@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello world!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Light &amp Sound Memory Game Bonanza!</h1>
+    <p>
+      Ahoy there! Welcome aboard the ~ Light & Sound Memory Game (Remastered)~ Try to repeat the pattern
+      by smacking those buttons you see after hitting "start"!
+    </p>
+    <p>
+      Welcome. You are a goose. Your only purpose is to bring about chaos and
+      destruction by repeating the pattern presented back correctly. You may
+      only choose poorly twice before it's game over.
+      <i><strong>Honk carefully.</strong></i>
+    </p>
+    <p>
+      <img
+        alt=""
+        src="https://cdn.glitch.global/634e7dec-89bb-48f7-9fb2-ae86f0d357d6/goose1.png?v=1650682594464"
+        style="height: 135px; width: 248px"
+        id="imgClickAndChange"
+        onclick="changeImage()"
+      />
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button class="hidden" onclick="stopGame()" id="stopBtn">Stop</button>
+
+    <!--     <button onclick="playSong();" id="songBtn">Play Song</button> -->
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone()"
+        onclick="guess(1)"
+      ></button>
+      <button
+        id="button2"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone()"
+        onclick="guess(2)"
+      ></button>
+      <button
+        id="button3"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone()"
+        onclick="guess(3)"
+      ></button>
+      <button
+        id="button4"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone()"
+        onclick="guess(4)"
+      ></button>
+
+      <button
+        id="button5"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone()"
+        onclick="guess(5)"
+      ></button>
+
+      <button
+        id="button6"
+        onmousedown="startTone(6)"
+        onmouseup="stopTone()"
+        onclick="guess(6)"
+      ></button>
+      <button
+        id="button7"
+        onmousedown="startTone(7)"
+        onmouseup="stopTone()"
+        onclick="guess(7)"
+      ></button>
+      <button
+        id="button8"
+        onmousedown="startTone(8)"
+        onmouseup="stopTone()"
+        onclick="guess(8)"
+      ></button>
+      <button
+        id="button9"
+        onmousedown="startTone(9)"
+        onmouseup="stopTone()"
+        onclick="guess(9)"
+      ></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Georgia", serif;
+  line-height: 1.5;
+  background-color: lightskyblue;
+  color: white;
+  text-align: center; 
+}
+
+h1 {
+  font-family: "garamond", serif;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* class selector  */
+.hidden {
+  display: none;
+}
+
+/* id selector */
+#gameButtonArea > button {
+  width: 150px;
+  height: 400px;
+  margin: 2px;
+}
+
+#button1 {
+  background: lightgreen;
+}
+#button2 {
+  background: mediumaquamarine;
+}
+#button3 {
+  background: lightseagreen;
+}
+#button4 {
+  background: darkturquoise;
+}
+#button5 {
+  background: deepskyblue;
+}
+#button6 {
+  background: RoyalBlue;
+}
+#button7 {
+  background: slateblue
+}
+#button8 {
+  background: rebeccapurple
+}
+#button9 {
+  background: orchid
+}
+
+#button1:active, #button1.lit {
+  background: palegreen;
+}
+#button2:active, #button2.lit  {
+  background: aquamarine;
+}
+#button3:active, #button3.lit  {
+  background: turquoise;
+}
+#button4:active, #button4.lit  {
+  background: aqua;
+}
+#button5:active, #button5.lit  {
+  background: skyblue;
+}
+#button6:active, #button6.lit  {
+  background: dodgerblue;
+}
+#button7:active, #button7.lit {
+  background: mediumpurple;
+}
+#button8:active, #button8.lit {
+  background: mediumslateblue;
+}
+#button9:active, #button9.lit {
+  background: violet;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
